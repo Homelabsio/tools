@@ -1,0 +1,14 @@
+<div class="main-container">
+  <ng-template [ngIf]="true" [ngIfElse]="login">
+    <app-header></app-header>
+    <div class="content-container">
+      <div class="content-area">
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template #login>
+    <router-outlet></router-outlet>
+  </ng-template>
+</div>

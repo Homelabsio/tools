@@ -1,0 +1,52 @@
+<header class="header header-6 fixed-top">
+  <div class="branding">
+    <a [routerLink]="''" class="nav-link">
+      <!-- <cds-icon shape="cloud-scale"></cds-icon> -->
+      <img src="assets/vcf.svg" alt="" style="margin-right:8px;">
+      <span class="title">Homelabs.IO - Tools</span>
+    </a>
+  </div>
+  <!-- <div class="header-nav">
+      <form class="search">
+        <label for="search_input">
+          <input id="search_input" type="text" style="padding: 0 8px 0 4px;margin: 0 8px;" placeholder="Search..." />
+          <cds-icon shape="angle" direction="right"></cds-icon>
+        </label>
+      </form>
+    </div> -->
+  <div class="header-actions header-actions-overflow">
+    <!-- <div class="nav-link nav-icon-text"> -->
+      <!-- <cds-icon shape="user"></cds-icon> -->
+      <!-- <span class="title" style="padding:0 8px 0 4px;">{{ state.userEmail }}</span> -->
+      <!-- <span class="title" style="padding:0 8px 0 4px;">{{ "John Doe" }}</span> -->
+    <!-- </div> -->
+    <clr-dropdown>
+      <button style="margin-right:8px;"clrDropdownTrigger>
+        <cds-icon shape="cog" size="md"></cds-icon>
+        <cds-icon shape="angle" size="sm" direction="down"></cds-icon>
+      </button>
+      <clr-dropdown-menu clrPosition="bottom-right">
+        <!-- <h6>Session</h6> -->
+        <!-- <a [routerLink]="''" clrDropdownItem>Settings</a> -->
+        <!-- <button type="button" class="txt-capitalize" (click)="" clrDropdownItem>Log Out</button> -->
+        <!-- <button type="button" class="txt-capitalize" clrDropdownItem>Log Out</button> -->
+        <h6>Themes</h6>
+        <!-- <button type="button" class="txt-capitalize" *ngFor="let theme of this.state.themes" (click)="this.state.setTheme(theme)" clrDropdownItem>{{theme.name}} theme</button> -->
+      </clr-dropdown-menu>
+    </clr-dropdown>
+  </div>
+</header>
+<!-- <app-alerts></app-alerts> -->
+<nav class="subnav">
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="'subnetcalc'" routerLinkActive="active">Visual Subnet Calculator</a>
+    </li>
+    <!-- <li class="nav-item">
+      <a class="nav-link" [routerLink]="'add/domain'" routerLinkActive="active">Deploy VI Domain</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="'add/cluster'" routerLinkActive="active">Deploy Cluster</a>
+    </li> -->
+  </ul>
+</nav>
